@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  nunoapptest:
+    image: nunomobiapp:v1
+    build: .
+    container_name: nuno1
+    ports:
+    - "5995:80"
+    restart: always
